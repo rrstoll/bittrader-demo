@@ -138,7 +138,7 @@ const Hero = () => {
         {/* Headline */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl"
+          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white px-[1.5rem] sm:px-0 mb-6 drop-shadow-2xl"
         >
           Trade Bitcoin with{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
@@ -149,7 +149,7 @@ const Hero = () => {
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="text-xl sm:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto drop-shadow-lg"
+          className="text-xl sm:text-2xl text-gray-200 px-[1.5rem] sm:px-0 mb-12 max-w-3xl mx-auto drop-shadow-lg"
         >
           Professional trading tools, institutional-grade security, and
           lightning-fast execution. Start trading in minutes.
