@@ -1,0 +1,36 @@
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-600: #ea580c;
+  --primary-700: #c2410c;
+}
+
+/* Global styles using Tailwind utilities */
+* {
+  @apply transition-colors duration-200;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-white text-gray-900;
+}
+
+/* Bitcoin price ticker animation */
+@keyframes price-flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.price-flash {
+  animation: price-flash 0.5s ease-in-out;
+}
+
+nextjs-portal {
+  display: none !important;
+}
