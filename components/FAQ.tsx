@@ -152,7 +152,12 @@ const FAQ = () => {
                 {/* Question Button */}
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full text-left p-6 sm:p-8 flex items-start justify-between gap-4 bg-white hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors"
+                  className={cn(
+                    "w-full text-left p-6 sm:p-8 flex items-start justify-between gap-4 transition-colors",
+                    isOpen 
+                      ? "bg-white" 
+                      : "bg-white hover:bg-gray-50 dark:hover:bg-gray-750"
+                  )}
                 >
                   <div className="flex-1">
                     {/* Category Badge */}
@@ -234,7 +239,7 @@ const FAQ = () => {
                         animate={{ y: 0 }}
                         exit={{ y: -10 }}
                         transition={{ duration: 0.2 }}
-                        className="px-6 sm:px-8 pb-6 sm:pb-8 bg-gray-50/50"
+                        className="px-6 sm:px-8 pb-6 sm:pb-8 bg-white"
                       >
                         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
