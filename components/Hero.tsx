@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import ThreeBackground from "./ThreeBackground";
 
 const Hero = () => {
-  const [btcPrice, setBtcPrice] = useState(67234.56);
+  const [btcPrice, setBtcPrice] = useState(105945.20);
   const [priceChange, setPriceChange] = useState(2.34);
 
   // Simulate live Bitcoin price updates
