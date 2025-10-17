@@ -110,11 +110,11 @@ const Hero = () => {
                 ? "0 0 20px rgba(34, 197, 94, 0.5)" 
                 : "0 0 20px rgba(239, 68, 68, 0.5)"
             }}
-            className="flex items-center gap-4 px-6 py-3 rounded-full bg-black/40 backdrop-blur-md border border-white/20"
+            className="flex items-center gap-4 px-4 py-2sm:px-6 sm:py-3 rounded-full bg-black/40 backdrop-blur-md border border-white/20"
           >
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">₿</span>
+              <div className="w-6 h-6 sm:w-8 sm:h-8  bg-orange-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-sm sm:text-lg">₿</span>
               </div>
               <span className="text-white font-semibold">BTC/USD</span>
             </div>
@@ -124,7 +124,7 @@ const Hero = () => {
                 key={btcPrice}
                 initial={{ scale: 1.2, color: priceChange >= 0 ? "#22c55e" : "#ef4444" }}
                 animate={{ scale: 1, color: "#ffffff" }}
-                className="text-2xl font-bold text-white"
+                className="sm:text-2xl text-xl font-bold text-white"
               >
                 ${btcPrice.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
               </motion.span>
